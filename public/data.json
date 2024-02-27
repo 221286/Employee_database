@@ -1,0 +1,121 @@
+[{
+    "id":"1001",
+    "imageUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgsaRe2zqH_BBicvUorUseeTaE4kxPL2FmOQ&usqp=CAU",
+    "firstName":"Anis",
+    "lastName":"Osama",
+    "email":"anisosama@dummyapis.com",
+    "contactNumber":"4210218453",
+    "dob":"26/08/1999",
+    "salary":2000,
+    "address":"Adress1"
+},
+{
+    "id":"1002",
+    "imageUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgsaRe2zqH_BBicvUorUseeTaE4kxPL2FmOQ&usqp=CAU",
+    "firstName":"Rahul",
+    "lastName":"Singh",
+    "email":"rahulsingh@dummyapis.com",
+    "contactNumber":"4210218453",
+    "dob":"6/02/1945",
+    "salary":2000,
+    "address":"Adress1"
+},
+{
+    "id":"1003",
+    "imageUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgsaRe2zqH_BBicvUorUseeTaE4kxPL2FmOQ&usqp=CAU",
+    "firstName":"Shwetabh",
+    "lastName":"Gangwar",
+    "email":"shwetabhgangwar@dummyapis.com",
+    "contactNumber":"4210218453",
+    "dob":"02/04/1993",
+    "salary":2000,
+    "address":"Adress1"
+},
+{
+    "id":"1004",
+    "imageUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgsaRe2zqH_BBicvUorUseeTaE4kxPL2FmOQ&usqp=CAU",
+    "firstName":"Shambu",
+    "lastName":"Singh",
+    "email":"shambhusingh@dummyapis.com",
+    "contactNumber":"4210218453",
+    "dob":"01/06/1994",
+    "salary":2000,
+    "address":"Adress1"
+},
+{
+    "id":"1005",
+    "imageUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgsaRe2zqH_BBicvUorUseeTaE4kxPL2FmOQ&usqp=CAU",
+    "firstName":"Shubhash",
+    "lastName":"Kumar",
+    "email":"shubhashkumar@dummyapis.com",
+    "contactNumber":"4210218453",
+    "dob":"26/01/1995",
+    "salary":2000,
+    "address":"Adress3"
+},
+{
+    "id":"1006",
+    "imageUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgsaRe2zqH_BBicvUorUseeTaE4kxPL2FmOQ&usqp=CAU",
+    "firstName":"Shaheen",
+    "lastName":"Bano",
+    "email":"shaheensana@dummyapis.com",
+    "contactNumber":"4210218453",
+    "dob":"03/02/1996",
+    "salary":5000,
+    "address":"Adress6"
+},
+{
+    "id":"1007",
+    "imageUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgsaRe2zqH_BBicvUorUseeTaE4kxPL2FmOQ&usqp=CAU",
+    "firstName":"Joyce",
+    "lastName":"David",
+    "email":"joycedavid@dummyapis.com",
+    "contactNumber":"4210218453",
+    "dob":"26/08/2000",
+    "salary":7000,
+    "address":"Adress7"
+},
+{
+    "id":"1008",
+    "imageUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgsaRe2zqH_BBicvUorUseeTaE4kxPL2FmOQ&usqp=CAU",
+    "firstName":"Quasin",
+    "lastName":"Raza",
+    "email":"quasinraza@dummyapis.com",
+    "contactNumber":"4210218453",
+    "dob":"22/03/1995",
+    "salary":2000,
+    "address":"Adress8"
+},
+{
+    "id":"1009",
+    "imageUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgsaRe2zqH_BBicvUorUseeTaE4kxPL2FmOQ&usqp=CAU",
+    "firstName":"Saqib",
+    "lastName":"Syed",
+    "email":"saqibsyed@dummyapis.com",
+    "contactNumber":"4210218453",
+    "dob":"20/06/1994",
+    "salary":2000,
+    "address":"Adress9"
+},
+{
+    "id":"1010",
+    "imageUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgsaRe2zqH_BBicvUorUseeTaE4kxPL2FmOQ&usqp=CAU",
+    "firstName":"Maaz",
+    "lastName":"Mubashir",
+    "email":"maazmubashir@dummyapis.com",
+    "contactNumber":"4210218453",
+    "dob":"21/02/1993",
+    "salary":2000,
+    "address":"Adress10"
+},
+{
+    "id":"1011",
+    "imageUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgsaRe2zqH_BBicvUorUseeTaE4kxPL2FmOQ&usqp=CAU",
+    "firstName":"Nikunj",
+    "lastName":"Priyadarshi",
+    "email":"nikunjpriyadarshi@dummyapis.com",
+    "contactNumber":"4210218453",
+    "dob":"29/02/1992",
+    "salary":2000,
+    "address":"Adress11"
+}]

@@ -1,23 +1,41 @@
-import logo from './logo.svg';
+
+import { useEffect, useState } from 'react';
 import './App.css';
+import Employess from './Components/Employess';
+import Header from './Components/Header';
+import Singleemployee from './Components/Singleemployee';
+
 
 function App() {
+  const [userlist,setuserlist]=useState([]);
+  const [employee,setemployee]=useState(null);
+  useEffect(()=>{
+      (async function fetching(){
+       try{
+        const response= await fetch('data.json');
+        if(!response.ok){
+          throw new Error("failed to fetch the data")
+        } else {
+          const data= await response.json();
+          setuserlist(data);
+        } 
+       } catch(error){
+        console.error("failed to fetch the data",error);
+       }
+
+      })();
+  },[])
+  console.log(employee);
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      
+      <Header/>
+      <div className='Employee-container'>
+      <Employess userlist={userlist} setemployee={setemployee} />
+      <Singleemployee employee={employee}/>
+      </div>
+      
+      
     </div>
   );
 }

@@ -1,38 +1,85 @@
-.App {
-  text-align: center;
+* {
+  padding:0;
+  margin:0;
+  border-box:none;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header-container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content:space-between;
+  margin:14px 10px;
+}
+.header-container button {
+  padding:3px;
+  border:1px solid black;
+  border-radius: 8px;
+  font-size:1.0rem;
+  font-weight:bold;
+  cursor:pointer;
+}
+.header-container button:hover {
+  background:#5FE05E;
+}
+.Employee-container {
+  display:grid;
+  grid-template-columns:30% 70%;
+  height:60vh;
+  max-height:700px;
+  //background:green;
+  margin:4.5rem 0;
+  
+
+}
+.employees{
+  border-right: double;
+    padding:1rem;
+  margin-right:0.1rem;
+  background:#ccc;
+  height:100%;
+  overflow-y:scroll;
+}
+.employees_name_title , 
+.single_employees_name_Info {
+  display:block;
+  border-bottom: double;
+  width:100%;
+  text-align:center;
+  padding-bottom:4px;
+  font-weight:bold;
+}
+.single_employees{
+  padding:1rem;
+  overflow-y:scroll;
+  background:#ccc;
+  height:100%;
 }
 
-.App-link {
-  color: #61dafb;
+.employee-list-container {
+  list-style-type:none;
+  padding:0.5rem;
+  margin-top:1rem;
 }
+.employee-list-container li{
+  padding:0.4rem;
+  background:white;
+  border:1px solid #ccc;
+  margin:2px 0;
+  border-radius:0.5rem;
+  cursor:pointer;
+  text-align:center;
+}
+.employee-list-container li:hover{
+  background:#5FE05E;
+}
+.single_employees_name_Info_image_container
+ {
+//width:100%;
+margin:2rem 0;
+  display:flex;
+justify-content:center;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+}
+.single_employees_name_Info_all_info h4 {
+  text-align:center;
+  margin:2px 0;
 }

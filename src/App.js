@@ -4,11 +4,13 @@ import './App.css';
 import Employess from './Components/Employess';
 import Header from './Components/Header';
 import Singleemployee from './Components/Singleemployee';
+import Modal from './Components/Modal';
 
 
 function App() {
   const [userlist,setuserlist]=useState([]);
   const [employee,setemployee]=useState(null);
+  const [showmodal,setshowmodal]=useState(false);
   useEffect(()=>{
       (async function fetching(){
        try{
@@ -25,17 +27,16 @@ function App() {
 
       })();
   },[])
-  console.log(employee);
   return (
     <div className="App">
       
-      <Header/>
+      <Header setshowmodal={setshowmodal}/>
       <div className='Employee-container'>
       <Employess userlist={userlist} setemployee={setemployee} />
       <Singleemployee employee={employee}/>
       </div>
       
-      
+     {showmodal &&(<Modal setshowmodal={setshowmodal}/>)} 
     </div>
   );
 }

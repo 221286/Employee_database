@@ -1,11 +1,11 @@
 import React from 'react'
 
-const Header = () => {
+const Header = ({setshowmodal}) => {
   return (
     <>
         <header className='header-container'>
             <h1 >Employee Database Management</h1>
-            <button>Add Employees</button>
+            <button onClick={()=>{setshowmodal(true)}}>Add Employees</button>
         </header>
       
     </>

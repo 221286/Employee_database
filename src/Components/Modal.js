@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react'
 
-const Modal = ({setshowmodal}) => {
+const Modal = ({setshowmodal,setuserlist,userlist}) => {
 const formReference = useRef(null);  
 
 useEffect(()=>{
@@ -24,7 +24,11 @@ return ()=>{
             e.preventDefault();
             const formData = new FormData(e.target);
             const empData = Object.fromEntries(formData);
-            console.log(empData);
+            empData.id=userlist.length +11222;
+            empData.imageUrl=empData.imageUrl||"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgsaRe2zqH_BBicvUorUseeTaE4kxPL2FmOQ&usqp=CAU";
+            setuserlist([...userlist,empData]);
+            setshowmodal(false);
+            formReference.current.reset();
             
 
         } } ref={formReference}  className='add_employee_container_create'> <h2>Enter User Details</h2>
@@ -32,7 +36,7 @@ return ()=>{
                 <input type='text' name='firstName' placeholder='Firstname' required/>
                 <input type='text' name='lastName' placeholder='Lasttname' required/>
             </div>
-            <input type='text' name='imageUrl' placeholder='Add imageURL' required/>
+            <input type='text' name='imageUrl' placeholder='Add imageURL' />
             <input type='email' name='email' placeholder='Email' required/>
             <input type='number' name='contactNumber' placeholder='Contact Number' required/>
             <input type='number' name='salary' placeholder='Salary' required/>

@@ -36,7 +36,7 @@ function App() {
       <Singleemployee employee={employee}/>
       </div>
       
-     {showmodal &&(<Modal setshowmodal={setshowmodal}/>)} 
+     {showmodal &&(<Modal setshowmodal={setshowmodal} setuserlist={setuserlist} userlist={userlist}/>)} 
     </div>
   );
 }

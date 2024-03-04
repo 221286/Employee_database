@@ -6,7 +6,8 @@ const Employess = ({userlist,setemployee}) => {
         <div className='employees_name'>
             <span className='employees_name_title'>Employee List</span>
             <ul className='employee-list-container'>
-                {userlist.map((user,index)=>{return (<li key={user.id} onClick={()=>{setemployee(user)}}>{`${user.firstName} ${user.lastName}`}</li>)})}
+                {userlist.map((user,index)=>{const listItemClasses=user.isSelected ? 'selected' : '';
+                  return (<li key={user.id} className='listItemClasses' onClick={()=>{setemployee(user)}}>{`${user.firstName} ${user.lastName}`}</li>)})}
             </ul>
         </div>
       

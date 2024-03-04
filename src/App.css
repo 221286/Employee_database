@@ -1,5 +1,6 @@
 :root {
   --button-hover:#5FE05E;
+  --background:#ccc;
 }
 
 * {
@@ -55,7 +56,7 @@
 .single_employees{
   padding:1rem;
   overflow-y:scroll;
-  background:#ccc;
+  background:var(--background);
   height:100%;
 }
 
@@ -72,6 +73,9 @@
   border-radius:0.5rem;
   cursor:pointer;
   text-align:center;
+}
+.selected {
+  background:#5FE05E;
 }
 .employee-list-container li:hover{
   background:#5FE05E;
@@ -133,5 +137,75 @@ justify-content:center;
 .add_employee_container_create input::-webkit-outer-spin-button,
 .add_employee_container_create input::-webkit-inner-spin-button {
   -webkit-appearance:none;
+}
+/*LOGIN FORM*/
+.Body {
+  height:100vh;
+}
+.Login {
+  width:100vw;
+  height:100%;
+  display:flex;
+  
+  justify-content:center;
+
+}
+.Login_form div{
+  display:flex;
+  top:0;
+  left:0;
+  gap:10px;
+  flex-direction:column;
+  width:100%;
+  
+  background:var(--background);
+  
+  
+  font-size:1.5rem;
+padding:60px 8px;  
+padding-top:20px;
+
+}
+
+.Login_form {
+  display:flex;
+  top:0;
+  left:0;
+  gap:10px;
+  flex-direction:column;
+  width:30%;
+  
+  
+  
+  justify-content:center;
+  
+  
+  
+
+}
+.Login_form h3 {
+  text-align:center;
+  top:0;
+  font-size:2.5rem;
+  margin-bottom:20px;
+}
+.Login_form input {
+ padding:10px;
+ margin:10px; 
+ font-size:1.2rem;
+ border:none;
+ border-radius:10px;
+
+}
+.Login-form-submit:hover {
+  background:var(--button-hover)
+
+}
+.Login_form input:focus {
+  outline:none;
+}
+.Login_form span {
+  color:red;
+  text-align:center;
 }
 

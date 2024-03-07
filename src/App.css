@@ -94,6 +94,11 @@ justify-content:center;
 }
 
 /* Modal*/
+.Modal_error_message{
+  
+  color:red;
+}
+
 .add_employee_container {
   position:absolute;
   width:100%;
